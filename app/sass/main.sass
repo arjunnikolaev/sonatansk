@@ -1,0 +1,346 @@
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+
+
+body
+	font-family: 'Fira Sans', sans-serif
+	font-size: 13px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
+	margin: 0
+	padding: 0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+header
+	width: 100%
+	height: 60px
+	background-color: #FFF
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1)
+	position: fixed
+	z-index: 1000
+	
+.header-content
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.main-menu	
+	margin: 0
+	padding: 0
+	height: 60px
+	list-style: none
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	font-style: normal
+	font-weight: normal
+	line-height: normal
+	font-size: 13px
+	letter-spacing: -0.26px
+	color: #222222
+
+.main-menu li 
+	position: relative
+	margin: 0 10px 0 0
+	padding: 18px 0
+
+.header-right
+	span
+		font-style: normal
+		font-weight: normal
+		line-height: normal
+		font-size: 13px
+		letter-spacing: -0.26px
+		color: #222222
+
+li
+    &.active
+        &::after
+            left: 0
+            right: 0
+            bottom: 0
+            position: absolute
+            content: ''
+            height: 2px
+            background-color: #007DFF
+            margin-bottom: -4px
+
+.main-menu a 
+	display: block
+	color: #000
+
+.main-menu a:hover
+	text-decoration: none
+
+button 
+	color: white
+	background-color: #007DFF
+	border: none
+	padding: 10px 15px
+	border-radius: 4px
+	margin-right: 10px
+	height: 30px
+	padding: auto
+	line-height: 12px
+	letter-spacing: -0.26px
+
+button:hover
+	background-color:#00adff
+
+
+.cover
+	width: 100%
+	background: url(/img/landing.jpg) no-repeat
+	background-size: cover
+
+
+
+
+.land-heading 
+	margin-top: 200px
+	width: 580px
+	margin-bottom: 100px
+	
+
+.land-heading 
+	p	
+		line-height: normal
+		font-style: normal
+		font-weight: 500
+		line-height: normal
+		font-size: 26px
+		letter-spacing: -0.52px
+		color: #3D3B38
+
+.land-heading .button
+	font-size: 13px
+
+.stuff
+	width: 100%
+	margin: 0 0 100px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: stretch
+	background-color: rgba(66, 66, 66, 0.5)
+	border-radius: 10px
+	padding: 10px
+
+.stufbox
+	p
+		font-style: normal
+		font-weight: normal
+		line-height: 22px
+		font-size: 14px
+		letter-spacing: -0.28px
+		color: #222222
+
+.stufbox 
+	b
+		font-weight: 500
+
+
+
+.stuff 
+	h4
+		margin: 0
+		padding: 0
+		font-style: normal
+		font-weight: normal
+		line-height: normal
+		font-size: 20px
+		letter-spacing: -0.4px
+		color: #000000
+
+
+.stufbox
+	flex-basis: 380px
+	height: 200px
+	flex-grow: 1
+	background-color: #ffffff
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1)
+	border-radius: 5px
+	margin-right: 10px
+	padding: 20px
+
+.stufbox:last-child
+	margin-right: 0
+
+footer
+	background-color: #f5f5f5
+	width: 100%
+	position: absolute
+
+footer ul
+	margin: 0
+	padding: 0 
+	list-style: none
+
+
+	
+
+footer a
+	text-decoration: none
+	color: #666666
+
+.footer-content	
+	margin: 20px 0
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	color: #666666
+	line-height: 20px
+	font-style: normal
+	font-weight: normal
+
+.footer-content
+	h5
+		font-style: normal
+		font-weight: 500
+		line-height: normal
+		font-size: 13px
+
+
+
+.contacts-content
+	width: 100%
+	display: flex
+	flex-direction: row
+
+.contacts-content
+	.page-block
+		flex-basis: 565px
+		flex-grow: 1
+
+
+.page-block
+	margin-top: 100px
+	margin-bottom: 100px
+	background: #FFFFFF
+	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15), 0px 2px 3px rgba(0, 0, 0, 0.05)
+	border-radius: 5px
+
+.map 
+	margin-right: 25px
+	overflow: hidden
+
+.son-form
+	padding: 20px
+
+.infobox
+	padding: 0
+	display: flex
+	flex-direction: row
+	justify-content: left
+
+.infobox
+	.infoleft
+		margin-right: 60px
+
+
+.son-form
+	h2
+		margin: 0
+		padding: 0
+		font-style: normal
+		font-weight: normal
+		line-height: normal
+		font-size: 20px
+		letter-spacing: -0.4px
+		color: #000000
+
+
+.son-form
+	textarea
+		width: 100%
+
+form 	
+	margin-top: 10px
+
+form
+	button
+		margin-top: 10px
+
+.inputs
+	display: flex
+	flex-direction:row
+	justify-content: left
+	margin-bottom: 20px
+
+.inputs
+	div
+		flex-basis: 250px
+		flex-grow: 1
+
+.inpright
+	margin-left: 15px
+
+
+form
+	p
+		font-weight: 500
+		margin: 0
+		padding: 0
+
+input
+	border-radius: 4px
+	margin: 0
+	border: 2px solid #E2E2E2
+	padding: 0 5px
+	width: 250px
+
+input:focus
+	outline: none
+	border-color: #007dff
+
+textarea
+	resize: none
+	border: 2px solid #E2E2E2
+	border-radius: 4px
+	padding: 0 5px
+	
+textarea:focus
+	outline: none
+	border-color: #007DFF
+
+
+
+@import "media" // Всегда в конце
+
+
+
